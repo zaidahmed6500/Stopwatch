@@ -15,6 +15,7 @@
     }
 
     .container {
+        scale: 1.5;
       padding: 1rem;
       max-width: 300px;
       text-align: center;
