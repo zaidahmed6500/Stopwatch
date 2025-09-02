@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
     <link rel="stylesheet" href="style.css">
-    <title>Stopwatch</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Stopwatch</h1>
-      <p class="time">
-        <span id="minutes">00</span>:<span id="seconds">00</span>:<span
-          id="tens"
-          >00</span>
-      </p>
-      <button id="start">Start</button>
-      <button id="stop">Stop</button>
-      <button id="reset">Reset</button>
+</head>
+<body id="body">
+    <div class="bd">
+        <div class="container">
+            <h1>StopWatch</h1>
+            <p class="time">
+                <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+            </p>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="mode-btn-fix">
+            <button id="darkBtn" class="mode-btn" onclick="document.body.style.backgroundColor='rgb(34, 34, 34)'">Dark</button>
+            <button id="lightBtn" class="mode-btn" onclick="document.body.style.backgroundColor='white'">Light</button>
+        </div>
     </div>
 
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
